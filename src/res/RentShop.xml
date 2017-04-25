@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cd:rentshop
+		xmlns:cd="http://www.example.org/RentShopSchema" 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.example.org/RentShopSchema RentShopSchema.xsd">
+		
+<cd:bike-products>
+		
+	<cd:product id="id1">
+			<cd:productname>Bike Wash Dissolver</cd:productname>
+			<cd:baseprice>40</cd:baseprice>
+			<cd:note>This is the model with tyre's enhancement</cd:note>
+			<cd:manufacturingyear>2017</cd:manufacturingyear>
+			<cd:wearrate>10</cd:wearrate>
+			<cd:status>0</cd:status>
+	</cd:product>	
+	<cd:product id="id2">
+			<cd:productname>Bike Wash Dissolver</cd:productname>
+			<cd:baseprice>20</cd:baseprice>
+			<cd:note>This is the model with spotlamp</cd:note>
+			<cd:manufacturingyear>2016</cd:manufacturingyear>
+			<cd:wearrate>8</cd:wearrate>
+			<cd:status>0</cd:status>
+	</cd:product>
+	<cd:product id="id3">
+			<cd:productname>Mountain Bike Socks</cd:productname>
+			<cd:baseprice>100</cd:baseprice>
+			<cd:note>For crazy jumping</cd:note>
+			<cd:manufacturingyear>2016</cd:manufacturingyear>
+			<cd:wearrate>1</cd:wearrate>
+			<cd:status>0</cd:status>
+	</cd:product>	
+	<cd:product id="id4">
+			<cd:productname>Mountain Bike Socks</cd:productname>
+			<cd:baseprice>50</cd:baseprice>
+			<cd:note>For jumping</cd:note>
+			<cd:manufacturingyear>2015</cd:manufacturingyear>
+			<cd:wearrate>50</cd:wearrate>
+			<cd:status>0</cd:status>
+	</cd:product>
+	<cd:product id="id5">
+			<cd:productname>All Purpose Bike Stand</cd:productname>
+			<cd:baseprice>40</cd:baseprice>
+			<cd:note>New model</cd:note>
+			<cd:manufacturingyear>2017</cd:manufacturingyear>
+			<cd:wearrate>0</cd:wearrate>
+			<cd:status>0</cd:status>
+	</cd:product>			
+			
+	</cd:bike-products>
+	
+	<cd:navigator-products>	
+    <cd:product id="id6">
+			<cd:productname>CPRS 12-3456</cd:productname>
+			<cd:baseprice>40</cd:baseprice>
+			<cd:note>New model</cd:note>
+			<cd:manufacturingyear>2017</cd:manufacturingyear>
+			<cd:wearrate>0</cd:wearrate>
+			<cd:status>0</cd:status>
+	 </cd:product>
+	</cd:navigator-products>
+	
+	<cd:accessories>
+	<cd:product id="id7">
+			<cd:productname>Knee-pad size M</cd:productname>
+			<cd:baseprice>3</cd:baseprice>
+			<cd:note>New model</cd:note>
+			<cd:manufacturingyear>2017</cd:manufacturingyear>
+			<cd:wearrate>1</cd:wearrate>
+			<cd:status>0</cd:status>
+	 </cd:product> 
+	 <cd:product id="id8">
+			<cd:productname>Pulsometer</cd:productname>
+			<cd:baseprice>4</cd:baseprice>
+			<cd:note>New model</cd:note>
+			<cd:manufacturingyear>2015</cd:manufacturingyear>
+			<cd:wearrate>20</cd:wearrate>
+			<cd:status>0</cd:status>
+	 </cd:product>
+	</cd:accessories>
+	
+</cd:rentshop>

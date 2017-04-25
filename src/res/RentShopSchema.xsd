@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+ 	targetNamespace="http://www.example.org/RentShopSchema" 
+ 	xmlns:tns="http://www.example.org/RentShopSchema" elementFormDefault="qualified">
+
+<element name="rentshop">
+	<complexType>
+		<sequence>
+			<element name="bike-products" minOccurs="0" maxOccurs="1">
+				<complexType>
+					<sequence>
+						<element name="product" type="tns:productType" minOccurs="1"
+							maxOccurs="unbounded" />
+					</sequence>
+				</complexType>
+			</element>
+
+		<element name="navigator-products" minOccurs="0" maxOccurs="1">
+				<complexType>
+					<sequence>
+						<element name="product" type="tns:productType" minOccurs="1"
+							maxOccurs="unbounded" />
+					</sequence>
+				</complexType>
+		</element>  
+			
+		<element name="accessories" minOccurs="0" maxOccurs="1">
+				<complexType>
+					<sequence>
+						<element name="product" type="tns:productType" minOccurs="1"
+							maxOccurs="unbounded" />
+					</sequence>
+				</complexType>
+			</element> 
+
+		</sequence>
+	</complexType>
+</element>
+	
+	<!-- Types -->
+
+	<complexType name="productType">
+		<sequence>
+			<element name="productname" type ="tns:nameType" maxOccurs="1" />
+			<element name="baseprice" type="int" maxOccurs="1" />
+			<element name="note" type="string" maxOccurs="1" />
+			<element name="manufacturingyear" type="int" maxOccurs="1" />
+			<element name="wearrate" type="int" maxOccurs="1" />
+			<element name="status" type="int" maxOccurs="1" />			
+		</sequence>
+		<attribute name="id" type="ID" use="required" />
+	</complexType>
+
+	<simpleType name="nameType">
+		<restriction base="string">
+				<!-- bike -->
+			<enumeration value="Bike Wash Dissolver" />
+			<enumeration value="Mountain Bike Socks" />
+			<enumeration value="All Purpose Bike Stand" />
+				<!-- navigator -->
+			<enumeration value="CPRS 12-3456"/>
+			<enumeration value="CPRS 12-3457"/>
+			<enumeration value="CPRS 13-6789"/>
+			    <!-- accessory -->
+			<enumeration value="Knee-pad size M"/>
+			<enumeration value="Knee-pad all size"/>
+			<enumeration value="Pulsometer"/>
+			<enumeration value="Windbreaker"/>  
+		</restriction>
+	</simpleType>													
+</schema>
